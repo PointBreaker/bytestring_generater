@@ -1,6 +1,0 @@
-file:
-  as -o asm.o asm.S
-
-objcopy -O binary --only-section=.text asm.o asm.bin
-
-cat ./asm.bin | /challenge/run
